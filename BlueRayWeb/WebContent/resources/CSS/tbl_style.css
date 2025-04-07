@@ -1,0 +1,275 @@
+.tbl_Content {
+	padding: 5px 5px 2px 2px;
+	width: 100%;
+	font-family: Tahoma;
+}
+
+.tbl_Content td {
+	vertical-align: top;
+	padding: 5px 2px 5px 10px;
+	font-size: 14px;
+}
+
+.tbl_Content th {
+	padding: 14px 5px 4px 5px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.Left_Round {
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border: 1px solid;
+	/*border-color:Orange;*/
+}
+
+.All_Round {
+	height: 100px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #2999D6;
+}
+
+#leftbar {
+	border-radius: 10px;
+	background-color: #0B3B17;
+	vertical-align: top;
+	margin-right: 10px
+}
+
+.roundcont {
+	width: 250px;
+	background-color: #f90;
+	color: #fff;
+}
+
+.roundcont p {
+	margin: 0 10px;
+}
+
+.roundtop {
+	background: url(tr.gif) no-repeat top right;
+}
+
+.roundbottom {
+	background: url(br.gif) no-repeat top right;
+}
+
+img.corner {
+	width: 15px;
+	height: 15px;
+	border: none;
+	display: block !important;
+}
+
+.PopupBody {
+	float: left;
+	background-color: #fafafa;
+	height: 400px;
+	overflow: scroll;
+}
+
+.PopupHeader {
+	background-color: #fafafa;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.Side_Menu {
+	width: 100%;
+}
+
+.Side_Menu td {
+	vertical-align: top;
+	padding: 5px 0px 5px 15px;
+	color: White;
+}
+
+.Side_Menu li {
+	vertical-align: top;
+	padding: 5px 0px 5px 15px;
+	color: White;
+	float: left;
+	position: relative;
+	line-height: 1.5em;
+	width: 10em;
+}
+
+.Side_Menu li a {
+	display: block;
+	/*border-right:1px solid #fff;
+	background:#E0F574;*/
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.Side_Menu li a:hover {
+	background-color: #5798B4;
+	color: #F8FBF4;
+}
+
+#page-wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.Btn_Row {
+	width: 100%;
+	/*background-color:Fuchsia;*/
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+.sidemenu {
+	width: 150px;
+	border: none;
+}
+
+.sidemenu li a {
+	height: 18px;
+	text-decoration: none;
+}
+/*Top sidemenu Item (Header and rounded corners)*/
+.sidemenu li.top a:link, .sidemenu li.top a:visited {
+	color: #828282;
+	display: block;
+	background: url(images/menuTop.png);
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 0;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Uncomment this if you want the header to be an interactive link
+.sidemenu li.top a:hover {
+  color: #828282;
+  background: url(images/menuTop.png) 0 -22px;
+}
+.sidemenu li.top a:active {
+  color: #26370A;
+  background: url(images/menuTop.png) 0 -44px;
+}*/
+
+/*sidemenu Item Middle*/
+.sidemenu li a:link, .sidemenu li a:visited {
+	color: #5E7830;
+	display: block;
+	background: url(images/menuMiddle.png);
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 20px;
+	font-size: 0.8em;
+}
+
+.sidemenu li a:hover {
+	color: #FFFFFF;
+	background: url(images/menuMiddle.png) 0 -22px;
+}
+
+.sidemenu li a:active {
+	color: #FFFFFF;
+	background: url(images/menuMiddle.png) 0 -44px;
+}
+
+/*Bottom sidemenu Item (rounded corners)*/
+.sidemenu li.bottom a:link, .sidemenu li.bottom a:visited {
+	color: #5E7830;
+	display: block;
+	background: url(images/menuBottom.png);
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 20px;
+	font-size: 0.8em;
+}
+
+.sidemenu li.bottom a:hover {
+	color: #FFFFFF;
+	background: url(images/menuBottom.png) 0 -22px;
+}
+
+.sidemenu li.bottom a:active {
+	color: #FFFFFF;
+	background: url(images/menuBottom.png) 0 -44px;
+}
+
+.menu1 {
+	width: 100%;
+	height: 150px;
+	background: white;
+}
+
+.menu2 {
+	width: 100%;
+	height: 150px;
+	background: white;
+}
+
+.menu3 {
+	width: 100%;
+	height: 150px;
+	background: white;
+}
+
+.icons {
+	width: 170px;
+	height: 125px;
+	margin-left: 50px;
+	margin-top: 12px;
+	float: left;
+	font-size: 12px;
+	border-radius: 1px 15px 1px 15px;
+	color: White;
+	padding: 0px 10px 10px 10px
+}
+
+.icons a {
+	text-decoration: none;
+	color: White;
+}
+/*#menu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#menu li {
+	float:left;
+	position:relative;
+	line-height: 2.5em;
+	width: 10em;
+}
+
+#menu a {
+	display:block;
+	border-right:1px solid #fff;
+	background:#E0F574;
+	color:#3B3B3B;
+	text-decoration:none;
+	padding:0 10px;
+}
+#menu a:hover {
+	background-color:#5798B4;
+	color:#fff;
+}
+#menu ul {
+	border-top:1px solid #fff;
+}
+#menu ul a {
+	border-right:none;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	background:#AEC245;
+}
+
+#menu ul {
+	position:absolute;
+	margin-top:-1em;
+	margin-left:.5em;
+	display:none;
+}
+#menu li ul {
+	margin-top:-3em;
+	margin-left:7em;
+}*/

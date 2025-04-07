@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Wallet</title>
+</head>
+
+<style>
+    /* Add your styles here */
+</style>
+
+<body>
+    <!-- Include the header -->
+    <div id="header-container"></div>
+
+    <script>
+        // Function to load header.html into the page
+        window.onload = function () {
+            fetch('Header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.log('Error loading header:', error));
+        };
+    </script>
+
+    <div class="container">
+        <form method="post">
+            <!-- First Row: 4 input fields -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bank">Bank</label>
+                    <select name="bank" id="bank">
+                        <option value="">Select Bank</option>
+                        <option value="bank1">Bank 1</option>
+                        <option value="bank2">Bank 2</option>
+                        <option value="bank3">Bank 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="text" name="balance" id="balance" placeholder="Enter Balance">
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholder="Enter Amount">
+                </div>
+
+                <div class="form-group">
+                    <label for="bank_ref_no">Bank Reference No</label>
+                    <input type="text" name="bank_ref_no" id="bank_ref_no" placeholder="Enter Bank Reference Number">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="payment_mode">Payment Mode</label>
+                    <select name="payment_mode" id="payment_mode">
+                        <option value="">Select Payment Mode</option>
+                        <option value="online">Online</option>
+                        <option value="cheque">Cheque</option>
+                        <option value="cash">Cash</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment_date">Payment Date</label>
+                    <input type="date" name="payment_date" id="payment_date">
+                </div>
+
+                <div class="form-group">
+                    <label for="remarks">Remarks</label>
+                    <textarea name="remarks" id="remarks" placeholder="Enter any remarks" rows="4"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

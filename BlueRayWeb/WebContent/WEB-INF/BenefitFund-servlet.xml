@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd  	
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.Pisquare"></context:component-scan>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+		   
+	</bean>
+
+	<bean id="ds"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+		<property name="url"
+			value="jdbc:sqlserver://localhost:1433;databaseName=Bank1"></property>
+		<property name="username" value=""></property>
+		<property name="password" value=""></property>
+	</bean>
+	
+	<bean id="ds1" 
+      class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+<property name="url" value="jdbc:sqlserver://DESKTOP-28K1PMR\SQLEXPRESS;databaseName=blueray;encrypt=false;trustServerCertificate=true;loginTimeout=30;"/>
+
+
+    <property name="username" value="sa"/>
+    <property name="password" value="pisquare@123"/>
+</bean> 
+
+	
+	
+	
+	
+	<bean id="ds2"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+				<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb2.username}"></property>
+		<property name="password" value="${mongodb2.password}"></property>
+		</bean>
+	
+
+		<bean id="ds3"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb3.username}"></property>
+		<property name="password" value="${mongodb3.password}"></property>
+		</bean>
+		
+		<bean id="ds4"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb4.username}"></property>
+		<property name="password" value="${mongodb4.password}"></property>
+		</bean>
+		
+		<bean id="ds5"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+	<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb5.username}"></property>
+		<property name="password" value="${mongodb5.password}"></property>
+	</bean>
+	<bean id="ds6"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb6.username}"></property>
+		<property name="password" value="${mongodb6.password}"></property>
+	</bean>
+	<bean id="ds7"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb7.username}"></property>
+		<property name="password" value="${mongodb7.password}"></property>
+	</bean>
+<bean id="ds8"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb8.username}"></property>
+		<property name="password" value="${mongodb8.password}"></property>
+	</bean>
+	
+	<bean id="ds9"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb9.username}"></property>
+		<property name="password" value="${mongodb9.password}"></property>
+	</bean>
+	
+	<bean id="ds10"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb10.username}"></property>
+		<property name="password" value="${mongodb10.password}"></property>
+	</bean>
+	
+	<bean id="ds11"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb11.username}"></property>
+		<property name="password" value="${mongodb11.password}"></property>
+	</bean>
+
+    <bean id="ds12"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb12.username}"></property>
+		<property name="password" value="${mongodb12.password}"></property>
+	</bean>
+	
+	
+	<bean id="ds13"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb13.username}"></property>
+		<property name="password" value="${mongodb13.password}"></property>
+	</bean>
+	
+		<bean id="ds14"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb14.username}"></property>
+		<property name="password" value="${mongodb14.password}"></property>
+	</bean>
+	
+		<bean id="ds15"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb15.username}"></property>
+		<property name="password" value="${mongodb15.password}"></property>
+	</bean>
+		<bean id="ds16"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb16.username}"></property>
+		<property name="password" value="${mongodb16.password}"></property>
+	</bean>
+		<bean id="ds17"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb17.username}"></property>
+		<property name="password" value="${mongodb17.password}"></property>
+	</bean>
+	
+	<bean id="ds18"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb18.username}"></property>
+		<property name="password" value="${mongodb18.password}"></property>
+	</bean>
+	
+	<bean id="ds19"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb19.username}"></property>
+		<property name="password" value="${mongodb19.password}"></property>
+	</bean>
+	
+	<bean id="ds20"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb20.username}"></property>
+		<property name="password" value="${mongodb20.password}"></property>
+	</bean>
+	
+	
+	<bean id="ds21"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb21.username}"></property>
+		<property name="password" value="${mongodb21.password}"></property>
+	</bean>
+	
+	<bean id="ds22"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb22.username}"></property>
+		<property name="password" value="${mongodb22.password}"></property>
+	</bean>
+
+
+	<bean id="ds23"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb23.username}"></property>
+		<property name="password" value="${mongodb23.password}"></property>
+	</bean>
+
+
+<bean id="ds24"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb24.username}"></property>
+		<property name="password" value="${mongodb24.password}"></property>
+	</bean>
+
+	<bean id="ds26" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb26.username}"></property>
+		<property name="password" value="${mongodb26.password}"></property>	
+</bean>
+<bean id="ds27" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb27.username}"></property>
+		<property name="password" value="${mongodb27.password}"></property>	
+</bean>
+<bean id="ds28" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb28.username}"></property>
+		<property name="password" value="${mongodb28.password}"></property>	
+</bean>
+<bean id="ds29" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb29.username}"></property>
+		<property name="password" value="${mongodb29.password}"></property>	
+</bean>
+<bean id="ds30" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb30.username}"></property>
+		<property name="password" value="${mongodb30.password}"></property>	
+</bean>
+
+	<bean id="ds31" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb31.username}"></property>
+		<property name="password" value="${mongodb31.password}"></property>	
+</bean>
+<bean id="ds32" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb32.username}"></property>
+		<property name="password" value="${mongodb32.password}"></property>	
+</bean>
+<bean id="ds33" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb33.username}"></property>
+		<property name="password" value="${mongodb33.password}"></property>	
+</bean>
+	
+<bean id="ds25"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb25.username}"></property>
+		<property name="password" value="${mongodb25.password}"></property>
+	</bean>
+	
+<bean id="ds34" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb34.username}"></property>
+		<property name="password" value="${mongodb34.password}"></property>	
+</bean>
+
+<bean id="ds35" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb35.username}"></property>
+		<property name="password" value="${mongodb35.password}"></property>	
+</bean>
+
+<bean id="ds36" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb36.username}"></property>
+		<property name="password" value="${mongodb36.password}"></property>	
+</bean>
+
+<bean id="ds37" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb37.username}"></property>
+		<property name="password" value="${mongodb37.password}"></property>	
+</bean>
+
+
+<bean id="ds38" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb38.username}"></property>
+		<property name="password" value="${mongodb38.password}"></property>	
+</bean>
+<bean id="ds39" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb39.username}"></property>
+		<property name="password" value="${mongodb39.password}"></property>	
+</bean>
+<bean id="ds40" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb40.username}"></property>
+		<property name="password" value="${mongodb40.password}"></property>	
+</bean>
+<bean id="ds41" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb41.username}"></property>
+		<property name="password" value="${mongodb41.password}"></property>	
+</bean>
+<bean id="ds42" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb42.username}"></property>
+		<property name="password" value="${mongodb42.password}"></property>	
+</bean>
+<bean id="ds43" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb43.username}"></property>
+		<property name="password" value="${mongodb43.password}"></property>	
+</bean>
+<bean id="ds44" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb44.username}"></property>
+		<property name="password" value="${mongodb44.password}"></property>	
+</bean>
+<bean id="ds45" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb45.username}"></property>
+		<property name="password" value="${mongodb45.password}"></property>	
+</bean>
+<bean id="ds46" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb46.username}"></property>
+		<property name="password" value="${mongodb46.password}"></property>	
+</bean>
+<bean id="ds47" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb47.username}"></property>
+		<property name="password" value="${mongodb47.password}"></property>	
+</bean>
+<bean id="ds48" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb48.username}"></property>
+		<property name="password" value="${mongodb48.password}"></property>	
+</bean>
+<bean id="ds49" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb49.username}"></property>
+		<property name="password" value="${mongodb49.password}"></property>	
+</bean>
+<bean id="ds50" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb50.username}"></property>
+		<property name="password" value="${mongodb50.password}"></property>	
+</bean>
+	<bean id="dsSys" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodbSys.username}"></property>
+		<property name="password" value="${mongodbSys.password}"></property>	
+</bean>
+<bean id="ds51" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb51.username}"></property>
+		<property name="password" value="${mongodb51.password}"></property>	
+</bean>
+
+	<bean id="ds52" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb52.username}"></property>
+		<property name="password" value="${mongodb52.password}"></property>	
+</bean>
+<bean id="ds53" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb53.username}"></property>
+		<property name="password" value="${mongodb53.password}"></property>	
+</bean>
+
+<bean id="ds54" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb54.username}"></property>
+		<property name="password" value="${mongodb54.password}"></property>	
+</bean>
+<bean id="ds55" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb55.username}"></property>
+		<property name="password" value="${mongodb55.password}"></property>	
+</bean>
+<bean id="ds56" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb56.username}"></property>
+		<property name="password" value="${mongodb56.password}"></property>	
+</bean>
+
+
+<bean id="ds57" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb57.username}"></property>
+		<property name="password" value="${mongodb57.password}"></property>	
+</bean>
+
+<bean id="ds58" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb58.username}"></property>
+		<property name="password" value="${mongodb58.password}"></property>	
+</bean>
+
+<bean id="ds59" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb59.username}"></property>
+		<property name="password" value="${mongodb59.password}"></property>	
+</bean>
+
+<bean id="ds60" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb60.username}"></property>
+		<property name="password" value="${mongodb60.password}"></property>	
+</bean>
+
+<bean id="ds61" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb61.username}"></property>
+		<property name="password" value="${mongodb61.password}"></property>	
+</bean>
+
+
+<bean id="ds62" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb62.username}"></property>
+		<property name="password" value="${mongodb62.password}"></property>	
+</bean>
+
+<bean id="ds63" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb63.username}"></property>
+		<property name="password" value="${mongodb63.password}"></property>	
+</bean>
+<bean id="ds64" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb64.username}"></property>
+		<property name="password" value="${mongodb64.password}"></property>	
+</bean>
+
+<bean id="ds65" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb65.username}"></property>
+		<property name="password" value="${mongodb65.password}"></property>	
+</bean>
+
+<bean id="ds66" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb66.username}"></property>
+		<property name="password" value="${mongodb66.password}"></property>	
+</bean>
+<bean id="ds67" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodb67.username}"></property>
+		<property name="password" value="${mongodb67.password}"></property>	
+</bean>
+<bean id="dbRandc" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="${mongodb.url}"></property>
+		<property name="username" value="${mongodbrandc.username}"></property>
+		<property name="password" value="${mongodbrandc.password}"></property>	
+</bean>
+	<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ds1"></property>
+	</bean>
+	
+	
+
+	
+
+	<bean id="dao10" class="com.Pisquare.Dao.UserDetailsDao" />
+<bean id="dao20" class="com.Pisquare.Dao.ApprovalDao" />
+
+	
+	<bean id="TCDao" class="com.Pisquare.Dao.AK_TCDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+<bean id="EditDao" class="com.Pisquare.Dao.AK_EditDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+<bean id="AuditDao" class="com.Pisquare.Dao.Audit_ReportDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+
+<bean id="AK_FpDao" class="com.Pisquare.Dao.FingerPrintDataDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+
+<bean id="AK_Case" class="com.Pisquare.Dao.AK_Cash_DenimonationDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+<bean id="AK_Dl" class="com.Pisquare.Dao.AK_DL_Dao">
+		<property name="template" ref="jt"></property>
+	</bean>
+<bean id="PerDao" class="com.Pisquare.Dao.Permission_Dao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+<bean id="empDao" class="com.Pisquare.Dao.EmployeeDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+<bean id="JLarrDao" class="com.Pisquare.Dao.JLArrearDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+<bean id="permission3dao" class="com.Pisquare.Dao.LevelThreeDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+
+
+<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+     <property name="location">
+         <value>/WEB-INF/lib/listPicker.properties</value>
+     </property>
+    </bean>
+
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+
+		<property name="basename" value="/WEB-INF/messages" />
+
+	</bean>
+
+
+	
+	<bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        </bean>
+
+
+
+	<mvc:resources mapping="/resources/**" location="/resources/"
+		cache-period="31556926" />
+
+
+	<mvc:resources mapping="/resources/**" location="/resources/CSS"
+		cache-period="31556926" />
+	
+
+<mvc:resources mapping="/resources/**" location="/resources/Images"
+		cache-period="31556926" />
+	<mvc:resources mapping="/resources/**" location="/resources/img"
+		cache-period="31556926" />
+
+	<mvc:resources mapping="resources/js/**" location="/js/" />
+	<mvc:resources mapping="resources/CSS/**" location="/CSS/" />
+	<mvc:resources mapping="resources/images/**" location="/Images/" />
+	<mvc:resources mapping="resources/img/**" location="/img/" />
+	
+	<mvc:resources mapping="resources/CSS/siteadmin/**" location="/img/" />
+
+	<mvc:resources mapping="/resources/**" location="/resources/js"
+		cache-period="31556926" />
+		
+
+</beans>  

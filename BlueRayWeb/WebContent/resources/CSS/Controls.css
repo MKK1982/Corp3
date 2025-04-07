@@ -1,0 +1,214 @@
+body {
+	
+}
+
+.Tbox1 {
+	color: Black;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #6893CF;
+	width: 150px;
+}
+
+.Tbox_M {
+	color: Black;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #FF0000;	width: 150px;
+}
+
+.Tbox_180 {
+	color: Black;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #6893CF;
+	width: 180px;
+}
+
+.Tbox_R {
+	color: #002779;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #6893CF;
+	width: 150px;
+	background-color: #f3f5f1;
+}
+
+.Tbox_R180 {
+	color: #001D59;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #6893CF;
+	width: 180px;
+	background-color: #FFFFDF;
+}
+
+.Modal_Close {
+	float: right;
+	border-radius: 15px;
+	width: 45px;
+	font-size: 12px;
+	padding: 5px 0px 5px 5px;
+	background-color: #535353;
+	text-align: center;
+	text-decoration: none;
+	color: White
+}
+
+.ddList {
+	color: Black;
+	font-family: Tahoma;
+	font-size: 14px;
+	border: 1px solid #6893CF;
+	width: 150px;
+}
+
+.LblStatus {
+	color: Red;
+	text-decoration: blink;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.btn_Blue {
+	background: #25A6E1;
+	background: -moz-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25A6E1),
+		color-stop(100%, #188BC0));
+	background: -webkit-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
+	background: -o-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
+	background: -ms-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
+	background: linear-gradient(top, #25A6E1 0%, #188BC0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25A6E1',
+		endColorstr='#188BC0', GradientType=0);
+	padding: 3px 5px;
+	color: #fff;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #1A87B9
+}
+
+.btn_Wood {
+	background: #25A6E1;
+	background: -moz-linear-gradient(top, #6F4242 0%, #856363 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6F4242),
+		color-stop(100%, #856363));
+	background: -webkit-linear-gradient(top, #6F4242 0%, #856363 100%);
+	background: -o-linear-gradient(top, #6F4242 0%, #856363 100%);
+	background: -ms-linear-gradient(top, #6F4242 0%, #856363 100%);
+	background: linear-gradient(top, #6F4242 0%, #856363 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6F4242',
+		endColorstr='#856363', GradientType=0);
+	padding: 3px 5px;
+	color: #fff;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #8E8E38
+}
+
+.btn_Gray {
+	background: #CACACD;
+	background: -moz-linear-gradient(top, #CACACD 0%, #CECECD 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CACACD),
+		color-stop(100%, #CECECD));
+	background: -webkit-linear-gradient(top, #CACACD 0%, #CECECD 100%);
+	background: -o-linear-gradient(top, #CACACD 0%, #CECECD 100%);
+	background: -ms-linear-gradient(top, #CACACD 0%, #CECECD 100%);
+	background: linear-gradient(top, #CACACD 0%, #CECECD 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CACACD',
+		endColorstr='#CECECD', GradientType=0);
+	padding: 3px 5px;
+	color: #fff;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #1A87B9
+}
+
+.Page_Heading {
+	background-color: #A8C0E8;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+.mGrid {
+	width: 100%;
+	background-color: #fff;
+	margin: 5px 0 10px 0;
+	border: solid 1px #525252;
+	border-collapse: collapse;
+}
+
+.mGrid td {
+	padding: 2px 2px 2px 5px;
+	border: solid 1px #c1c1c1;
+	color: #717171;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.mGrid th {
+	padding: 4px 2px;
+	color: #fff;
+	background: #424242 url(grd_head.png) repeat-x top;
+	border-left: solid 1px #525252;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 11px;
+}
+
+.mGrid .alt {
+	background: #fcfcfc url(grd_alt.png) repeat-x top;
+}
+
+.mGrid .pgr {
+	background: #424242 url(grd_pgr.png) repeat-x top;
+}
+
+.mGrid .pgr table {
+	margin: 5px 0;
+}
+
+.mGrid .pgr td {
+	border-width: 0;
+	padding: 0 6px;
+	border-left: solid 1px #666;
+	font-weight: bold;
+	color: #fff;
+	line-height: 12px;
+}
+
+.mGrid .pgr a {
+	color: Aqua;
+	text-decoration: none;
+}
+
+.mGrid .pgr a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#listLink a{
+	color: white;
+	text-decoration: none;
+}
+#ListLink {
+color: white;
+}
+.ModalPopupBG {
+	background-color: #666699;
+	filter: alpha(opacity = 50);
+	opacity: 0.7;
+}
