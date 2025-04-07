@@ -15746,6 +15746,7 @@ if(conn!=null){
   										mp.put("BranchCodeList", branchCodeList);
   										per1.setBranch_Type(Branch_Type);
   										
+  										String CBranch_Type2=10;
   										
   										String CBranch_Type="";
   										String CBranchName="";
