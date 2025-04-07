@@ -15747,6 +15747,8 @@ if(conn!=null){
   										per1.setBranch_Type(Branch_Type);
   										
   										String CBranch_Type2=10;
+  										String CBranch_Type3=20;
+  										String CBranch_Type4=30;
   										
   										String CBranch_Type="";
   										String CBranchName="";
